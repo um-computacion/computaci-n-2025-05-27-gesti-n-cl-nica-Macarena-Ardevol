@@ -4,9 +4,9 @@
 ## 👤 Información del Alumno
 
 ### 📋 Datos Personales
-- **Nombre y Apellido**: [Completar con nombre y apellido]
+- **Nombre y Apellido**: Macarena Ardevol
 - **Ciclo Lectivo**: 2025
-- **Carrera**: [Completar con nombre de la carrera]
+- **Carrera**: INgeniería en informática
 
 ## ⏰ Información Importante sobre la Entrega
 
@@ -345,4 +345,22 @@ El sistema debe incluir pruebas unitarias utilizando el módulo `unittest`, que 
 
 - ✅ Confirmar que los turnos y recetas se guardan correctamente en la historia clínica del paciente.
 
----
+-----------------------------------------------------------------------------------------------
+#### ¿Cómo ejecutar el sistema?
+ - 1.Asegurate de estar ubicado dentro de la carpeta raíz del proyecto en tu terminal.
+
+ - 2.Ejecutá el sistema desde la terminal con:
+ - python3 cli.py
+ - Esto iniciará el menú interactivo desde donde podrás agregar pacientes, médicos, agendar turnos, emitir recetas, etc.
+#### ¿Cómo ejecutar las pruebas?
+ - Asegurate de tener pytest instalado. Si no lo tenés, podés instalarlo con:
+ - pip install pytest
+ - Desde la carpeta raíz del proyecto, ejecutá todos los tests con:
+ - python3 -m unittest ......
+ - Esto correrá tanto los tests de funcionamiento como los de errores.
+#### Explicación general del diseño
+ - El sistema fue desarrollado siguiendo el paradigma de Programación Orientada a Objetos, dividiendo el  código en clases que representan las entidades principales del dominio de una clínica médica: Paciente,   Médico, Turno, Receta, Historia Clínica, Especialidad, etc.
+
+- Cada clase se encuentra en su propio archivo dentro de la carpeta clinica/modelo para mantener el orden y la modularidad. Además, se crearon clases de excepciones personalizadas en excepciones.py para un mejor manejo de errores.
+
+- El archivo cli.py actúa como interfaz de línea de comandos para interactuar con el sistema. También se desarrolló una carpeta tests con pruebas automatizadas para verificar el correcto funcionamiento del sistema y la validación de errores.
